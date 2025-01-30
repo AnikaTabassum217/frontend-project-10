@@ -28,11 +28,22 @@
       }
     }
   </script>
+
+  <!-- Google font- poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+      .font-poppins{
+        font-family: "Poppins", serif;
+      }
+  </style>
 </head>
 
 <body>
   <header class="container mx-auto">
-    <nav>
+    <nav class="font-poppins">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -73,7 +84,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <button class="btn bg-btn-primary-color text-white font-semibold text-lg ">Free Consultation</button>
+          <button class="btn bg-btn-primary-color hover:bg-yellow-800 text-white font-semibold text-lg ">Free Consultation</button>
         </div>
       </div>
     </nav>
@@ -83,20 +94,26 @@
       <div class="relative mt-16">
         <img class="w-full" src="./images/banner.png" alt="">
         <div class="flex justify-center items-center">
-          <div class="absolute top-1/3 space-y-6">
-            <h1 class="text-white  text-center font-extrabold text-7xl">We Provide Effective <br> Legal Solutions</h1>
-            <p class="text-center text-white text-color font-normal text-base">There are many variations of passages of
+          <div class="absolute inset-0 ">
+           <div class="flex flex-col justify-center items-center h-full">
+            <h1 class="text-white  text-center font-semibold md:font-bold lg:font-extrabold
+            text-2xl  md:text-5xl  lg:text-7xl">We Provide Effective <br> Legal Solutions</h1>
+            <p class="text-center text-white text-color font-normal text-base ">There are many variations of passages of
               Lorem Ipsum available, but the majority <br>have suffered alteration in some form, by injected humour.</p>
 
-            <div class="flex justify-center gap-6 mt-4">
+            <div class="flex justify-center gap-6 mt-4 ">
               <input type="text" placeholder="Search your services" class="input input-bordered input-md w-1/2 " />
-              <button class="btn bg-btn-primary-color text-white font-semibold text-lg border-none">Search</button>
+              <button class="btn bg-btn-primary-color hover:bg-yellow-800 text-white font-semibold text-lg border-none ">
+                Search
+              </button>
             </div>
+           </div>
           </div>
         </div>
 
       </div>
     </section>
+
   </header>
 
   <main class="container mx-auto">
@@ -108,10 +125,10 @@
 
         <!-- card -->
         <div class="mt-16">
-          <div class="grid grid-cols-3 grid-rows-2 gap-0 place-items-center border  border-red-500">
+          <div class="grid grid-cols-3 grid-rows-2 gap-0 place-items-center ">
             <!-- Business Law -->
             <div
-              class="flex flex-col justify-center items-center gap-4 border-b border-r border-dashed  border-red-500 ">
+              class="flex flex-col justify-center items-center gap-4 w-full h-full py-20 px-10   border-r border-b">
               <img src="./images/business.png" alt="">
               <h2 class="text-3xl font-extrabold">Business Law</h2>
               <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
@@ -123,8 +140,7 @@
             </div>
 
             <!-- Criminal Law -->
-            <div class="flex flex-col justify-center items-center gap-4 border-b 
-             border-r border-t border-dashed  border-red-500">
+            <div class="flex flex-col justify-center items-center gap-4 py-20 px-10 w-full h-full border-t border-b bg-gradient-to-b from-text-color">
               <img src="./images/criminal.png" alt="">
               <h2 class="text-3xl font-extrabold">Criminal Law</h2>
               <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
@@ -135,7 +151,8 @@
               </div>
             </div>
             <!-- Child Support -->
-            <div class="flex flex-col justify-center items-center gap-4 border-b border-dashed  border-red-500">
+            <div class="flex flex-col justify-center items-center gap-4 w-full h-full py-20 px-10 border-b
+            border-l ">
               <img src="./images/child.png" alt="">
               <h2 class="text-3xl font-extrabold">Child Support</h2>
               <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
@@ -146,21 +163,21 @@
               </div>
             </div>
             <!-- Education Law -->
-            <div class="flex flex-col justify-center items-center gap-4 border-r border-dashed  border-red-500">
+            <div class="flex flex-col justify-center items-center gap-4 w-full h-full py-20 px-10 border-r ">
               <img src="./images/education.png" alt="">
               <h2 class="text-3xl font-extrabold">Education Law</h2>
-              <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
+              <p class="text-center text-base font-normal text-text-color-primary ">There are many variations of
                 passages of Lorem Ipsum available, but the
                 majority have suffered alteration in some form, by injected humour.</p>
-              <div class="  h-6 w-6 rounded-full bg-btn-primary-color  mt-2">
+              <div class="  h-6 w-6 rounded-full bg-btn-primary-color ">
                 <i class="fa-solid fa-arrow-right ml-1 text-white"></i>
               </div>
             </div>
             <!-- Divorce Law -->
-            <div class="  border-r border-dashed  border-red-500 ">
-              <div class="flex flex-col justify-center items-center gap-4 ">
+           
+              <div class="flex flex-col justify-center items-center gap-4 w-full h-full py-20 px-10 border-r">
                 <img class="" src="./images/divorce.png" alt="">
-                <h2 class="text-3xl font-extrabold">Education Law</h2>
+                <h2 class="text-3xl font-extrabold">Divorce Law</h2>
                 <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
                   passages of Lorem Ipsum available, but the
                   majority have suffered alteration in some form, by injected humour.</p>
@@ -168,15 +185,15 @@
                   <i class="fa-solid fa-arrow-right ml-1 text-white"></i>
                 </div>
               </div>
-            </div>
+            
             <!-- Tax Law -->
-            <div class="flex flex-col justify-center items-center gap-4 ">
+            <div class="flex flex-col justify-center items-center gap-4 w-full h-full py-20 px-10">
               <img src="./images/tax.png" alt="">
               <h2 class="text-3xl font-extrabold">Tax Law</h2>
-              <p class="text-center text-base font-normal text-text-color-primary mt-2">There are many variations of
+              <p class="text-center text-base font-normal text-text-color-primary ">There are many variations of
                 passages of Lorem Ipsum available, but the
                 majority have suffered alteration in some form, by injected humour.</p>
-              <div class="  h-6 w-6 rounded-full bg-btn-primary-color  mt-2">
+              <div class="  h-6 w-6 rounded-full bg-btn-primary-color">
                 <i class="fa-solid fa-arrow-right ml-1 text-white"></i>
               </div>
             </div>
@@ -199,9 +216,9 @@
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full ">
             <img src="./images/slider-1.jpg" class="w-full rounded-lg" />
-            <div class="absolute top-1/4 left-[25%]">
+            <div class="absolute inset-0 ">
 
-              <div class="flex flex-col justify-center items-center">
+              <div class="flex flex-col justify-center items-center h-full">
                 <div class="avatar">
                   <div class="ring-white ring-offset-base-100 w-24 rounded-full ring ring-offset-2">
                     <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -322,7 +339,7 @@
 
           <div class="collapse collapse-plus bg-base-200 p-2">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">1. Are application fee waivers available</div>
+            <div class="collapse-title text-xl font-medium">2. Are application fee waivers available</div>
             <div class="collapse-content">
               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour, . </p>
@@ -331,7 +348,7 @@
 
           <div class="collapse collapse-plus bg-base-200 p-2">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">1. Are application fee waivers available</div>
+            <div class="collapse-title text-xl font-medium">3. Are application fee waivers available</div>
             <div class="collapse-content">
               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour, . </p>
@@ -340,7 +357,7 @@
 
           <div class="collapse collapse-plus bg-base-200 p-2">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">1. Are application fee waivers available</div>
+            <div class="collapse-title text-xl font-medium">4. Are application fee waivers available</div>
             <div class="collapse-content">
               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                 alteration in some form, by injected humour, . </p>
@@ -358,23 +375,113 @@
     <section>
       <div class="mt-20">
         <h2 class="text-text-color-secondary font-extrabold text-4xl text-center">Contact With Us</h2>
-        <p class="text-center text-text-color-primary text-base font-normal">There are many variations of passages of
+        <p class="text-center text-text-color-primary text-base font-normal mt-6">There are many variations of passages of
           Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
       </div>
 
-      <div class="mt-16 grid grid-cols-2 gap-6">
-         <div></div>
-         <div class="space-y-5">
-          <input type="text" placeholder="Your Name" class="bg-text-color-third border-none input input-bordered w-full max-w-md" />
-          <input type="text" placeholder="Your Email" class="bg-text-color-third border-none input input-bordered w-full max-w-md" />
-          <input type="text" placeholder="Subject" class="bg-text-color-third border-none input input-bordered w-full max-w-md" />
-          <textarea
-          placeholder="Bio"
-          class="textarea textarea-bordered textarea-lg w-full max-w-md"></textarea>
-         </div>
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 h-full ">
+        <div class="grid grid-cols-2 grid-rows-2 place-items-center bg-text-color-third h-full">
+          <div class="flex flex-col justify-center items-center gap-4 w-full border-b border-r border-gray-300 p-6">
+            <img src="./images/location.png" alt="">
+            <h2 class="text-center font-extrabold text-2xl text-text-color-secondary">Address</h2>
+            <p class="text-center text-text-color-primary text-base font-normal">A108 Adam Street, <br>
+              New York, NY 535022</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-4 w-full border-b
+           border-gray-300 p-6">
+            <img src="./images/call.png" alt="">
+            <h3 class="text-center font-extrabold text-2xl text-text-color-secondary">Call Us</h3>
+            <p class="text-center text-text-color-primary text-base font-normal">+88 01750 00 00 00 <br>
+              +88 01750 00 00 00</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center gap-4 w-full border-r border-gray-300 p-6">
+            <img class="" src="./images/email.png" alt="">
+            <h2 class="text-center font-extrabold text-2xl text-text-color-secondary">Email Us</h2>
+            <p class="text-center text-text-color-primary text-base font-normal">info@gmail.com <br>
+              info@gmail.com</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center gap-4 ">
+            <img class="" src="./images/time.png" alt="">
+            <h2 class="text-center font-extrabold text-2xl text-text-color-secondary">Working Hours</h2>
+            <p class="text-center text-text-color-primary text-base font-normal">
+              Mon-Fri: 9AM to 5PM <br>
+              Sunday: 9AM to 1 PM
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between  h-full ">
+          <input type="text" placeholder="Your Name"
+            class="bg-text-color-third border-none input input-bordered w-full max-w-2xl" />
+          <input type="text" placeholder="Your Email"
+            class="bg-text-color-third border-none input input-bordered w-full max-w-2xl" />
+          <input type="text" placeholder="Subject"
+            class="bg-text-color-third border-none input input-bordered w-full max-w-2xl" />
+          <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg w-full max-w-2xl"></textarea>
+          <button type="submit" class="btn w-full max-w-2xl bg-btn-primary-color text-white font-semibold text-xl">Send
+            Message </button>
+        </div>
       </div>
+
+      
     </section>
   </main>
+
+  <footer>
+    <div class="w-full mt-20">
+      <footer class="footer bg-black text-base-content p-10">
+        <nav>
+          <h6 class="">
+            <img src="./images/logo.png" alt="">
+          </h6>
+          <p class="text-white text-base font-normal mt-8">
+            There are many variations of <br>
+             passages of Lorem Ipsum <br>
+             available, but the majority have <br>
+              suffered alteration in some <br>
+               form, by injected humour.
+          </p>
+        </nav>
+        <nav>
+          <h6 class=" text-white text-2xl font-extrabold ">Usefull Link</h6>
+          <a class="link link-hover text-white text-base font-normal mt-8">Homes</a>
+          <a class="link link-hover text-white text-base font-normal">About us</a>
+          <a class="link link-hover text-white text-base font-normal">Cases</a>
+          <a class="link link-hover text-white text-base font-normal">Contact Us</a>
+          <a class="link link-hover text-white text-base font-normal">Blog</a>
+   
+        </nav>
+        <nav>
+          <h6 class="text-white text-2xl font-extrabold ">Contact Now</h6>
+          <a class="link link-hover text-white text-base font-normal mt-8">555 4th 5t NW, Washington <br>
+            DC 20530, United States</a>
+          <a class="link link-hover text-white text-base font-normal">+88 01750 000 000 <br>
+            +88 01750 000 000</a>
+          <a class="link link-hover text-white text-base font-normal">info@gmail.com <br>
+            info@gmail.com</a>
+        </nav>
+        <form>
+          <h6 class="text-white text-2xl font-extrabold">Subscribe</h6>
+          <p class="text-white text-base font-normal mt-8">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</p>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input input-bordered join-item" />
+              <button class="btn bg-btn-primary-color text-white join-item">
+                <img class="w-4 h-4 " src="./images/sent-email.png" alt="">
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+    </div>
+  </footer>
 
 </body>
 
